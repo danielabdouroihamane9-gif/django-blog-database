@@ -12,6 +12,7 @@ db.sqlite3
 
 # Environment variables & secrets
 .env
+WORKFLOW_NOTES.md
 
 # IDE / VS Code settings
 .vscode/
