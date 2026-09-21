@@ -8,6 +8,7 @@ A modular Django application demonstrating relational database design, custom us
 
 The core database schema is defined within the `blog` application, consisting of four interconnected models:
 
+```Markdown
 ┌─────────────┐
 │    User     │ (AbstractUser)
 └──────┬──────┘
@@ -18,6 +19,7 @@ Post ◄────── Comment
 │
 ▼
 Tag
+```
 
 ### Data Models & Relationships
 
@@ -86,7 +88,7 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-### 5. Start Development Server 
+### 5. Start Development Server
 
 ```powershell
 python manage.py runserver
@@ -94,12 +96,11 @@ python manage.py runserver
 
 Access the Django Admin panel at `http://127.0.0.1:8000/admin/`.
 
-
-# Common ORM Queries & Usage
+## Common ORM Queries & Usage
 
 You can test these database queries directly inside the Django interactive shell (`python manage.py shell`):
 
-### 1. Fetch Published Posts 
+## 1. Fetch Published Posts
 
 ```Python
 from blog.models import Post
@@ -136,7 +137,7 @@ for user in users:
     print(user.username, user.total_comments)
 ```
 
-## Project Structure 
+## Project Structure
 
 ```Markdown
 django_database/
